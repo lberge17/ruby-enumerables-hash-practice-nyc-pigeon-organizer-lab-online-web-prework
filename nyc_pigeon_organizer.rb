@@ -12,18 +12,18 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  pigeons.each do |name, values|
-    values.each do |pigeonvalue, array|
-      data.each do |category, values|
-        values.each do |value, array|
-          array.each do |element|
-            if element == name && pigeonvalue == category
-              pigeons[name][pigeonvalue] << value.to_s
-            end
-          end
-        end
-      end
-    end
-  end
+  #pigeons.each do |name, values|
+  #  values.each do |pigeonvalue, array|
+  #    data.each do |category, values|
+  #      values.each do |value, array|
+  #        array.each do |element|
+  #          if element == name && pigeonvalue == category
+  #            pigeons[name][pigeonvalue] << value.to_s
+  #          end
+  #        end
+  #      end
+  #    end
+  #  end
+  #end
   pigeons
 end
