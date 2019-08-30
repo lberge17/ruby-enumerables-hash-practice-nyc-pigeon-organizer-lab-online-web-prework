@@ -17,7 +17,7 @@ def nyc_pigeon_organizer(data)
       data.each do |data_categories, data_values|
         data_values.each do |data_value, data_array|
           data_array.each do |data_name|
-            if data_name == pigeons_name && pigeons_category == data_categories
+            if data_name == pigeons_name && pigeons_categories == data_categories
               pigeons[pigeons_name][pigeons_category] << value.to_s
             end
           end
