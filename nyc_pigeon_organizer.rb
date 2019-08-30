@@ -1,13 +1,13 @@
 def nyc_pigeon_organizer(data)
   pigeons = {}
-  data.each do |categories, values|
-    values.each do |value, array|
-      array.each do |name|
-        if pigeons[name] == nil
-          pigeons[name] = {}
-          pigeons[name][categories] = []
+  data.each do |data_categories, data_values|
+    data_values.each do |data_value, data_array|
+      data_array.each do |data_name|
+        if pigeons[data_name] == nil
+          pigeons[data_name] = {}
+          pigeons[data_name][data_categories] = []
         else
-          pigeons[name][categories] = []
+          pigeons[data_name][data_categories] = []
         end
       end
     end
@@ -17,8 +17,8 @@ def nyc_pigeon_organizer(data)
       data.each do |data_categories, data_values|
         data_values.each do |data_value, data_array|
           data_array.each do |data_name|
-            if data_name == pigeons_name && pigeonvalue == pigeons_category
-              pigeons[name][pigeonvalue] << value.to_s
+            if data_name == pigeons_name && pigeon_category == data
+              pigeons[pigeon_name][pigeon_category] << value.to_s
             end
           end
         end
