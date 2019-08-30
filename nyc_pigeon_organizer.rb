@@ -1,13 +1,13 @@
 def nyc_pigeon_organizer(data)
   pigeons = {}
-  data.each do |data_categories, data_values|
+  data.each do |data_category, data_values|
     data_values.each do |data_value, data_array|
       data_array.each do |data_name|
         if pigeons[data_name] == nil
           pigeons[data_name] = {}
-          pigeons[data_name][data_categories] = []
+          pigeons[data_name][data_category] = []
         else
-          pigeons[data_name][data_categories] = []
+          pigeons[data_name][data_category] = []
         end
       end
     end
