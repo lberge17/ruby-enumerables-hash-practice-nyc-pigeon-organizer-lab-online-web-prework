@@ -4,5 +4,5 @@ def nyc_pigeon_organizer(data)
     pigeons = {value[0] => category => value}
   end
   
-  new
+  pigeons
 end
