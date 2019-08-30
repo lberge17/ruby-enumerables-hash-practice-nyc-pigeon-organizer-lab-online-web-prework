@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
       array.each do |name|
         if pigeons[name] == nil
           pigeons[name] = {}
-          pigeons[name][category] = {}
+          pigeons[name][category] = []
         elsif pigeons[name]
         
         end
