@@ -1,3 +1,8 @@
 def nyc_pigeon_organizer(data)
-  # write your code here!
+  pigeons = {}
+  data.each do |category, values|
+    
+  end
+  
+  new
 end
